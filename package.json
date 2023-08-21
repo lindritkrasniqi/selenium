@@ -2,10 +2,22 @@
   "name": "selenium",
   "version": "1.0.0",
   "description": "Selenium tests",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --no-timeout -r ts-node/register tests/**/*.spec.ts"
   },
-  "author": "",
-  "license": "MIT"
+  "author": "Lindrit Krasniqi",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "selenium-webdriver": "^4.11.1",
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.5.1",
+    "@types/selenium-webdriver": "^4.1.15",
+    "typescript": "^5.1.6",
+    "ts-node": "^10.9.1"
+  }
 }
